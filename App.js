@@ -11,7 +11,7 @@ export default class App extends Component {
   constructor(props){
     super(props) ;
     this.state = {
-       data:[]  
+       data:[] 
       } ;
   
   ParkData.fetchParks()
@@ -26,8 +26,9 @@ export default class App extends Component {
   }
 
   _renderPark = (item) =>  {
-    return 
+    return (
       <ParkItem item={item}/>
+    )
   }
   // _handleClick =() =>{
   //   console.log('clicky');

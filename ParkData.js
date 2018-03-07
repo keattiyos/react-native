@@ -1,5 +1,5 @@
 function getUrl(){
-    return "http://web.sit.kmutt.ac.th/sanit/int493/" ;
+    return 'http://web.sit.kmutt.ac.th/sanit/int493/' ;
 }
 
 function fetchParks(){

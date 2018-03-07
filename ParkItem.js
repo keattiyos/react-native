@@ -6,17 +6,15 @@ export default class ParkItem extends Component {
   render() {
     let { item } = this.props ;
     const picsrc = item.image ; 
-    const Thumbnail = `http://web.sit.kmutt.ac.th/sanit/int493/assets/img/thumbs/${picsrc}` ;
+    const thumbnail = `http://web.sit.kmutt.ac.th/sanit/int493/assets/img/thumbs/${picsrc}` ;
     const headurl =   `http://web.sit.kmutt.ac.th/sanit/int493/assets/img/headers/${picsrc}` ; 
 
-    return (
-
-   
+    return (   
         <Content>
           <Card>
             <CardItem>
               <Left>
-                <Thumbnail source={{uri: Thumbnail}} />
+                <Thumbnail source={{uri: thumbnail}} />
                 <Body>
                   <Text>{item.park}</Text>
                   <Text note>{item.state}</Text>
@@ -25,8 +23,7 @@ export default class ParkItem extends Component {
             </CardItem>
             <CardItem cardBody>
               <Image source={{uri: headurl}} style={{height: 200, width: null, flex: 1}}/>
-            </CardItem>
-    
+            </CardItem>    
           </Card>
         </Content>
   
